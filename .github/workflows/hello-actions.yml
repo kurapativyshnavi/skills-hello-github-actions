@@ -1,0 +1,12 @@
+name: Hello GitHub Actions
+
+on:
+  pull_request:  
+    types: [opened]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:   
+      - name: Say hello in logs
+        run: echo "Hello from GitHub Actions"
